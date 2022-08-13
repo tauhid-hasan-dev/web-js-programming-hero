@@ -1,0 +1,42 @@
+1-DOM is model of object which is constructed or creted with html elements
+
+getElementID and getElementByClassName
+---------------------------------------
+2-get element by Id diye amra ekta matro element pabo
+3-getElementsByClassName diye amra ekta array like object pabo.
+4-getElementsByClassName thakle ekta HTMLCollection pabo jeta array er moto ekta object. oi arrray er upor loop chalie amra alada kore element gula pete pari 
+
+
+ QUERY SELECTOR
+-----------------
+1- document.querySelector selects the FIRST ELEMENT among the different elements with same Class;
+2- document.querySelectorAll selects All element with the same classes;
+3- you need to add a dot to select a element with class and a # to select a element of ID
+
+
+difference between nodelist and html collection 
+-------------------------------------------------
+read this article https://dev.to/jharteaga/difference-between-htmlcollection-and-nodelist-25bp
+
+1- We find a nodelist when we select element by querySelectorAll
+2- we find a HtmlCollections when we selcet element by getElementByClassName
+3- nodelist is not live its stactic (it will not update anything changed by javascript)
+4- htmlcollection will update immidietly after we change element 
+5- The getElementsByClassName() and getElementsByTagName() methods return a live HTMLCollection.
+6- The querySelectorAll() method returns a static NodeList.
+7- nodelist can be iterated by foEach but HTMLcollection can not be 
+8- nodelist and Htmlcollection both can be iterated by for of loop
+
+nodelist not a array
+---------------------
+Not an Array!
+A NodeList may look like an array, but it is not.
+You can loop through a NodeList and refer to its nodes by index.
+But, you cannot use Array methods like push(), pop(), or join() on a NodeList.
+
+classlist
+-----------
+1- classlist is to add, remove class from a Element.
+2- we can set attribute like class, id , href, alt or any attribute to a element  (setAttribute)
+3- we can get atrribute from an element by adding a getAttribute method to the element.
+4- we can change any style using js
