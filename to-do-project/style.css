@@ -9,6 +9,7 @@
 h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    /*   box-sizing: border-box; */
 }
 
 .section-one {
@@ -23,7 +24,6 @@ h1 {
 .container {
     text-align: center;
     font-family: lato, 'sans serif';
-    /* background-color: rgb(218, 218, 241); */
     width: 40%;
 }
 
@@ -49,7 +49,7 @@ p:focus {
 }
 
 #input-text {
-    width: 90%;
+    width: 88%;
     padding: 11px 20px;
     border: 2px solid rgb(83, 237, 167);
 }
@@ -80,4 +80,37 @@ p:focus {
     text-align: left;
     margin-top: 5px;
     display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #input-text {
+        width: 82%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 786px) {
+    .container {
+        width: 80%;
+    }
+
+    #input-text {
+        width: 82%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 786px) and (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+
+    #input-text {
+        width: 90%;
+    }
 }

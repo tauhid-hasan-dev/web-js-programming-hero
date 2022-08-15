@@ -32,10 +32,10 @@ btnAdd.addEventListener('click', () => {
         }
         for (let btn of btnEdit) {
             btn.addEventListener('click', (e) => {
-                const para = e.target.parentNode.childNodes[1];
-                para.contentEditable = true;
-                para.style.backgroundColor = 'white';
-                para.focus();
+                const paragraph = e.target.parentNode.childNodes[1];
+                paragraph.contentEditable = true;
+                paragraph.style.backgroundColor = 'white';
+                paragraph.focus();
                 const done = e.target.parentNode.childNodes[5];
                 done.style.color = '#22CB5C'
                 done.style.fontSize = '30px';
@@ -43,9 +43,9 @@ btnAdd.addEventListener('click', () => {
         }
         for (let btn of btnDone) {
             btn.addEventListener('click', (e) => {
-                const para = e.target.parentNode.childNodes[1];
-                para.contentEditable = false;
-                para.style.backgroundColor = 'rgb(225, 255, 245)';
+                const paragraph = e.target.parentNode.childNodes[1];
+                paragraph.contentEditable = false;
+                paragraph.style.backgroundColor = 'rgb(225, 255, 245)';
                 const done = e.target.parentNode.childNodes[5];
                 done.style.color = 'black'
                 done.style.fontSize = '20px';
