@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*  background-color: rgb(240, 191, 191); */
+    padding-top: 10vh;
+}
+
+.container {
+    text-align: center;
+    font-family: lato, 'sans serif';
+    /* background-color: rgb(218, 218, 241); */
+    width: 40%;
+}
+
+
+button {
+    width: 50px;
+    padding: 10px 0;
+}
+
+p {
+    width: 80%;
+    padding: 10px 10px;
+}
+
+p:focus {
+    border: none;
+}
+
+.input-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#input-text {
+    width: 90%;
+    padding: 11px 20px;
+    border: 2px solid rgb(83, 237, 167);
+}
+
+.icon {
+    border: 1px solid black;
+    padding: 10px 20px;
+    border: 2px solid rgb(83, 237, 167);
+}
+
+.icon:hover {
+    background-color: rgb(83, 237, 167);
+}
+
+.added-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px 10px 10px;
+    text-align: left;
+    border: 2px solid rgb(235, 255, 246);
+    background-color: rgb(225, 255, 245);
+}
+
+.error {
+    color: red;
+    text-align: left;
+    margin-top: 5px;
+    display: none;
+}
