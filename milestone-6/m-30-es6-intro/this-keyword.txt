@@ -1,0 +1,12 @@
+================ this keyword in javascript =================
+
+- this is a window object 
+- variables and function in the global scope will be added to the window object
+- this refers to the object that is currently calling the function
+
+
+================  this in Regular Function and Arrow Function ==================
+
+- Arrow function does not has its own this keyword (if arrow function is in global scope it will refer to the
+  window object)
+- if Arrow function 

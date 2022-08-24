@@ -1,0 +1,18 @@
+============= default parameters =============
+
+jodi kono parameter na thake tahole sei parameter er value ta undefined hoi 
+undefined er maddhome kono mathmatical calculation korle seta NaN hoi 
+ar tai amra default parameter hisebe parameter er pashe (first = 0) aivabe default parameter set korte pari 
+
+
+============= template string ==============
+
+template string muloto 2 ta main kaj kore 
+
+1- it helps to line break
+2- it can take any javascript expression ${javascript expression} like this.
+
+
+Note: if function is a value of any variable we call it function expression 
+
+Arrow function does not have their own this but regular function have their own this
