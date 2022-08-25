@@ -1,0 +1,49 @@
+//----------------OPTIONAL CHAINING--------------//
+
+Optionnal chaining means - even if their is no value of degre the code execution will go to the year property and check if it is a property of the obj object */
+
+
+
+//---------- map()-------------// 
+
+- by the map function we can iterate and do certain operation on every element of an array and map - function creates a new array and returns it. Actual array is not muted.
+
+//-------------- forEach()-------------//
+
+- forEach() is the same as map but foEach does not return anything;
+- map and array will not modify the original array
+
+//---------------filter()---------------//
+
+- filter will iterate over an array and return a new array based on a condition
+
+//---------------- find()-----------------//
+
+- find is same as filter but it will return the first element based on a condition not an array.
+
+//------------ dot notation - bracket notation------------//
+
+- bracket notation is usefull if we want to use a property from a variable
+
+- we can not access a property by dot notation 
+    1- if property name starts with Number (123name)
+    2- if property name has a space  or dash between them (name-use)
+  but we can access all type of property by bracket notation 
+
+
+//----------------- CLASS ----------------//
+
+- Class er maddhome amra eki rokomer bivinno object create korte pari
+- class is a template to create object
+- First letter of class name is Capital letter
+- Class does not exept parameter but it accepts parameter by constructor function in it 
+- constructor take dynamic parameters from outside and help to create a different object
+- when we call the class we must use 'new' keyword
+- in the constructor function "this" should be used to assign property value.
+
+//---------------- PROTOTYPE INHERITENSE -------------------//
+
+- we can store common field(property) and common methods to another class
+- and we can inherite properties or field from that class by extending it to the target class
+- inside the target class we need to use super() method to call the constructor function(methos)
+- this is how we can generate dynamic objects.
