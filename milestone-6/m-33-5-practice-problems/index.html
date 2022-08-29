@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Select players for your Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <nav class="navbar navbar-expand-lg text-white justify-content-center fw-semibold bg-info py-3 fixed-top">
+        <div class="d-flex container px-4">
+            <form class="d-flex " role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                    id="player-input">
+                <button class="btn btn-primary" type="button" onclick="playerSearch()">Search</button>
+            </form>
+            <h1>Select Player for your team</h1>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-8  pt-2">
+                    <div class="row g-4 mt-1 " id="player-holder">
+                        <!--      there is card here append from javascript -->
+                    </div>
+                </div>
+                <div class="col-4 pt-5 sidenav ">
+                    <div class="row px-2">
+                        <h3 class=" bg-warning text-center p-2">Added Player</h3>
+                        <div class="col-12 pt-1 ">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Meal</th>
+                                        <th scope="col">Order Now</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-container">
+                                    <!--   <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="bg-info text-center mt-4 p-2">Player Details</h3>
+                        <div class="col-12 pt-2 " id="information-holder">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

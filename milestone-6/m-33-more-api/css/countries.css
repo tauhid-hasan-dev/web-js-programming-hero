@@ -1,0 +1,13 @@
+.country {
+    background-color: rgb(255, 249, 241);
+    border: 2px solid tomato;
+    border-radius: 15px;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+#parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px
+}
