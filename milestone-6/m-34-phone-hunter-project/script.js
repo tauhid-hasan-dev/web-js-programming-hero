@@ -69,23 +69,25 @@ const displayPhoneDetails = (details) => {
     modalHolder.innerHTML = '';
     const modal = document.createElement('div');
     modal.innerHTML = `
-        <div class = 'text-center my-3'>
-        <img style="width:230px" class="h-100 card-img-top  " src="${image}" alt="">
+        <div class = 'text-center mt-1 mb-3'>
+            <img style="width:230px" class="h-100 card-img-top  " src="${image}" alt="">
         </div>
         <div class = 'd-flex justify-content-center align-items-center flex-column'>
             <h3 >${name}</h3>
             <h4> ${brand}</h4>
             <h5> ${releaseDate ? releaseDate : 'Will be added soon'}</h5>
         </div>
-        <h6>Main Features</h6>
         <hr>
-        <p ><span class = 'fw-bold'>Storage</span>: ${storage}</p>
-        <p><span class = 'fw-bold'>Display</span>: ${displaySize}</p>
-        <p><span class = 'fw-bold'>Memory</span>       : ${memory}</p>
-        <h6>Others</h6>
+        <h6 class = 'fw-bold'>Main Features</h6>
         <hr>
-        <p><span class = 'fw-bold'>GPS</span> :${GPS}</p>
-        <p><span class = 'fw-bold'>NFC</span> :${NFC}</p>
+        <p ><span class = 'fw-bold text-secondary'>Storage</span>: ${storage}</p>
+        <p><span class = 'fw-bold text-secondary'>Display</span>: ${displaySize}</p>
+        <p><span class = 'fw-bold text-secondary'>Memory</span>       : ${memory}</p>
+        <hr>
+        <h6 class = 'fw-bold'>Others</h6>
+        <hr>
+        <p><span class = 'fw-bold text-secondary'>GPS</span> :${GPS}</p>
+        <p><span class = 'fw-bold text-secondary'>NFC</span> :${NFC}</p>
     `
     modalHolder.appendChild(modal)
 }
