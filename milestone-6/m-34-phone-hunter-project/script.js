@@ -65,12 +65,32 @@ const displayPhoneDetails = (details) => {
     const { name, mainFeatures, brand, image, releaseDate, others } = details;
     const { storage, displaySize, memory } = mainFeatures;
     const { GPS, NFC } = others;
-
-    
+    const modalHolder = document.getElementById('modal-body');
+    modalHolder.innerHTML = '';
+    const modal = document.createElement('div');
+    modal.innerHTML = `
+        <div class = 'text-center my-3'>
+        <img style="width:230px" class="h-100 card-img-top  " src="${image}" alt="">
+        </div>
+        <div class = 'd-flex justify-content-center align-items-center flex-column'>
+            <h3 >${name}</h3>
+            <h4> ${brand}</h4>
+            <h5> ${releaseDate ? releaseDate : 'Will be added soon'}</h5>
+        </div>
+        <h6>Main Features</h6>
+        <hr>
+        <p ><span class = 'fw-bold'>Storage</span>: ${storage}</p>
+        <p><span class = 'fw-bold'>Display</span>: ${displaySize}</p>
+        <p><span class = 'fw-bold'>Memory</span>       : ${memory}</p>
+        <h6>Others</h6>
+        <hr>
+        <p><span class = 'fw-bold'>GPS</span> :${GPS}</p>
+        <p><span class = 'fw-bold'>NFC</span> :${NFC}</p>
+    `
+    modalHolder.appendChild(modal)
 }
 
-
-
+//search function
 const phoneSearch = () => {
     processSearch(12)
 }
@@ -99,4 +119,4 @@ document.getElementById('btn-show-all').addEventListener('click', () => {
 })
 
 
-//loadPhoneAsync(''); 
+loadPhoneAsync('oppo'); 
