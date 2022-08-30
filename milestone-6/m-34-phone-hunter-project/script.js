@@ -55,10 +55,15 @@ const displayPhones = (phones, phoneLimit) => {
 }
 
 const loadPhoneDetails = async (id) => {
-    const url = `https://openapi.programming-hero.com/api/phone/${id}`
-    const res = await fetch(url);
-    const data = await res.json();
-    displayPhoneDetails(data.data);
+    try {
+        const url = `https://openapi.programming-hero.com/api/phone/${id}`
+        const res = await fetch(url);
+        const data = await res.json();
+        displayPhoneDetails(data.data);
+    } catch (error) {
+        console.log(error);
+    }
+
 }
 
 const displayPhoneDetails = (details) => {
@@ -92,8 +97,11 @@ const displayPhoneDetails = (details) => {
     modalHolder.appendChild(modal)
 }
 
+
+
 //search function
-const phoneSearch = () => {
+const phoneSearch = (e) => {
+    e.preventDefault();
     processSearch(12)
 }
 
@@ -121,4 +129,4 @@ document.getElementById('btn-show-all').addEventListener('click', () => {
 })
 
 
-loadPhoneAsync('oppo'); 
+//loadPhoneAsync('oppo'); 

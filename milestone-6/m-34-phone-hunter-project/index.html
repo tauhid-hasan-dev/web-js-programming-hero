@@ -13,10 +13,11 @@
 <body class="container">
     <nav class="navbar navbar-expand-lg text-white justify-content-center fw-semibold bg-dark py-3 fixed-top">
         <div class="d-flex container px-4">
-            <form class="d-flex " role="search">
+            <form class="d-flex " onsubmit="phoneSearch(event)">
+                <!-- //this is the best practice -->
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                     id="phone-input">
-                <button class="btn btn-primary" type="button" onclick="phoneSearch()">Search</button>
+                <input class="btn btn-primary" type="submit" value='Search' />
             </form>
             <h1>Find Your Phone</h1>
         </div>
