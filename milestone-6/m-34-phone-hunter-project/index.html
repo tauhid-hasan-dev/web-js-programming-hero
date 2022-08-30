@@ -34,6 +34,46 @@
         <div class="alert alert-danger fw-semibold text-danger d-none" role="alert" id="alert">
             <h3>No phone found, please try a new search!</h3>
         </div>
+        <div style="height:80vh ;" class="d-flex justify-content-center d-none align-items-center" id="spinner">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center d-none my-5" id="show-all">
+            <button class="btn btn-primary " type="button" id="btn-show-all">Show All</button>
+        </div>
+
+        <!-- Modal Body-->
+        <div class="modal fade" id="showPhoneDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="showPhoneDetailsLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="showPhoneDetailsLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <img class="h-100 card-img-top " src="${image}" alt="">
+                            <h3>Phone Name : ${name}</h3>
+                            <h4>Phone Brand : ${brand}</h4>
+                            <h5>Release Date : ${releaseDate}</h5>
+                            <h6>Main Features</h6>
+                            <p>Storage :${storage}</p>
+                            <p>Display Size :${displaySize}</p>
+                            <p>Memory :${memory}</p>
+                            <h6>Others</h6>
+                            <p>GPS :${GPS}</p>
+                            <p>NFC :${NFC}</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
