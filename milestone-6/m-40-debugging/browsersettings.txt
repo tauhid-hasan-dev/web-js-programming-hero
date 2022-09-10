@@ -1,0 +1,20 @@
+Immportant settings of chrome browser
+--------------------------------------
+
+-------- PREFERENCE TAB-----------
+Network :
+     - Preserve log
+     
+Console :
+     - LogXMLHttpRequests (to log the api loading(ajax call) in a complex app)
+     - ShowTimestamps
+     - Show CORS errors in the console(it should be ticked)
+     - Autocomplete from history
+     - Group similar message in console
+     - Preserve log upon nevigation
+
+Element:
+     - Ruler on hover
+
+
+     

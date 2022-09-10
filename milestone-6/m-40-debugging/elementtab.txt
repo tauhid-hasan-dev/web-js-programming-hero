@@ -1,0 +1,4 @@
+Element TAB IN CONSOLE:
+     - style
+     - Event Listeners
+     - Accessibility (for phisically challanged people)(example : alt attribute in img tag, aria tag)

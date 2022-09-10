@@ -1,0 +1,16 @@
+read this article: https://developer.chrome.com/docs/devtools/console/api/
+
+Console TAB IN CONSOLE:
+    - we can show or not show warning , verboes , info, errorsl
+    - logging level (research it)
+
+    - monitor(function name) - it will monitor the function how many times it is called and how many parameter passed to it
+    - Unmonitor(function name)
+
+    - Console.count() --> use it inside the function to count how many times it has been called
+
+    - monitorEvent(element) --> it will monitor all the event on that element
+      monitorEvent(element, ['click']) --> it will only monitor the click events
+    - unmonitorEvent(element)
+
+    -console.table() --> is very usefull to show datas in a table in the console  

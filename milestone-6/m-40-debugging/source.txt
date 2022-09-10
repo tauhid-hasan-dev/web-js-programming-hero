@@ -1,0 +1,3 @@
+- from file system we can add a workspace to edit directly in the browser
+- ctrl + shift + o (to find only functions in the file) (source + vs code same command)
+- conditional breakpoint(right click on the breakpoint)
