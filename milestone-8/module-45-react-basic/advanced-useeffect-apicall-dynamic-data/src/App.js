@@ -1,3 +1,14 @@
+/* To load External data in React We need to follow five steps:
+
+       1-  declare a state with useState() hook
+       2-  useEffect() hook to fetch data from an api 
+          (useEffect takes two parameter 
+            1- an anonymous function  
+            2- empty array as a dependency )
+       3- Load Data from api inside the useEffect
+       4- Connect with state(store the data to the initial state declare in useState)
+       5- map the data and show the ui */
+
 import { useEffect, useState } from 'react';
 import './App.css';
 
