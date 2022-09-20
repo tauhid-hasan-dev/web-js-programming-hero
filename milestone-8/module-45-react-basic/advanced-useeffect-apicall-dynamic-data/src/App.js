@@ -1,5 +1,4 @@
 /* To load External data in React We need to follow five steps:
-
        1-  declare a state with useState() hook
        2-  useEffect() hook to fetch data from an api 
           (useEffect takes two parameter 
