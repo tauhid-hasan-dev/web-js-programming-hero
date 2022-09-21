@@ -1,7 +1,7 @@
 .country{
     border: 2px solid black;
-    margin: 0 auto 50px auto;
+    border-radius: 10px;
     background-color: bisque;
     padding: 20px;
-    width: 50%;
+    margin-bottom: 20px ;
 }

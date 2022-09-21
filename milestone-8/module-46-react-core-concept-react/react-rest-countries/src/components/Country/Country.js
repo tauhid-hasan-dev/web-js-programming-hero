@@ -4,6 +4,7 @@ import './Country.css'
 const Country = (props) => {
     console.log(props)
     const {name, flags, population} = props.country; 
+    console.log(props.country)
     const {common} = name;
     const {png} = flags;
     //props is a object and country is property of props object and country itself is a object
