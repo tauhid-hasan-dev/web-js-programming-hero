@@ -17,7 +17,7 @@ const Countries = () => {
             <h1>Total country: {countries.length}</h1>
             <div className='card-container'>
             {
-                countries.map(country => <Country country= {country} ke></Country>) //this is how we can send the whole data 
+                countries.map(country => <Country country= {country} key={country.cca3}></Country>) //this is how we can send the whole data 
             }
             </div>
             
